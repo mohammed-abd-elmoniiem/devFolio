@@ -116,7 +116,7 @@ nav.navbar a {
 }
 
 nav.navbar #navbarSupportedContent{
-    padding: 20px 50px;
+    padding: 20px 5px;
     position: fixed;
     inset: 0;
     /* min-height: 100vh; */
