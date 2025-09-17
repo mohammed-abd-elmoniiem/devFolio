@@ -1,0 +1,118 @@
+ <nav
+        class="navbar container-fluid navbar-expand-lg py-3 position-fixed start-0 end-0"
+      >
+        <div class="container m-auto d-flex justify-content-between">
+          <a class="navbar-brand text-white" href="#">DevFolio</a>
+          <button
+            class="navbar-toggler text-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="fa fa-bars text-white"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse text-end border-info"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav bg-white ms-auto px-4 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-dark active"
+                  aria-current="page"
+                  href="#home"
+                >
+                  <label for="_home">home</label></a
+                >
+                <input
+                  class="position-absolute opacity-0"
+                  type="radio"
+                  checked
+                  name="toggle-linkd"
+                  id="_home"
+                />
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#about">
+                  <label for="_about">about</label></a
+                >
+                <input
+                  class="position-absolute opacity-0"
+                  type="radio"
+                  name="toggle-linkd"
+                  id="_about"
+                />
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#portfolio">
+                  <label for="_portfolio">portfolio</label></a
+                >
+                <input
+                  class="position-absolute opacity-0"
+                  type="radio"
+                  name="toggle-linkd"
+                  id="_portfolio"
+                />
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#services">
+                  <label for="_services">services</label></a
+                >
+                <input
+                  class="position-absolute opacity-0"
+                  type="radio"
+                  name="toggle-linkd"
+                  id="_services"
+                />
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#work">
+                  <label for="_work">work</label></a
+                >
+                <input
+                  class="position-absolute opacity-0"
+                  type="radio"
+                  name="toggle-linkd"
+                  id="_work"
+                />
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#blog">
+                  <label for="_blog">blog</label></a
+                >
+                <input
+                  class="position-absolute opacity-0"
+                  type="radio"
+                  name="toggle-linkd"
+                  id="_blog"
+                />
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">drop down 1</a></li>
+
+                  <li><a class="dropdown-item" href="#">drop down 2</a></li>
+                  <li><a class="dropdown-item" href="#">drop down 3</a></li>
+                  <li><a class="dropdown-item" href="#">drop down 4</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
