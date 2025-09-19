@@ -88,7 +88,62 @@ div div.title h2{
     text-shadow: 0px 0px 8px rgba(43, 43, 43, 0.274);
 }
 
-/* end of the global */
+
+
+/* start of the carousel of the portfolio */
+div#carousel-portfolio *{
+    /* border: 1px solid red !important; */
+}
+div#carousel-portfolio{
+    /* border: 1px solid red !important; */
+    position:fixed;
+    inset: 0;
+    /* margin: 2px; */
+    /* width: 100%!important; */
+  
+    padding: 70px 70px;
+    background-color: #0000008c;
+    z-index: 555555;
+    
+    
+    transition: transform 0.1s;
+ backdrop-filter: blur(5px);
+
+}
+div#carousel-portfolio div.carousel-inner{
+    width: 100% !important;
+    max-width: 800px !important;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+   
+}
+div#carousel-portfolio div.carousel-inner div.carousel-item{
+    width: 100% !important
+}
+div#carousel-portfolio div.carousel-inner div.carousel-item img{
+    width: 100% !important;
+    object-fit: contain !important;
+}
+div#carousel-portfolio button[ data-bs-target="#carousel-portfolio"]{
+    position: absolute;
+    height: 50px;
+    width: 30px;
+    background-color: var(--bg-black);
+    top: 50%;
+    margin-inline: 30px;
+    transform: translateY(-50%);
+    z-index: 99555555;
+}
+div#carousel-portfolio a:has(i.fa){
+    top: 35px ;
+    right: 70px;
+    font-size: 20px;
+    color: #fff;
+}
+/*{
+ end of the global */
 
 
 
@@ -122,6 +177,8 @@ nav.navbar #navbarSupportedContent{
     /* min-height: 100vh; */
     background-color: #525252;
     /* overflow-y: scroll; */
+    transform-origin: center;
+    transition-duration: 0.1s !important;
    
 }
 
@@ -308,6 +365,7 @@ div.home  strong:nth-child(4){
             visibility: hidden;
 
     }
+
     
 }
 /* end of the home */
