@@ -7,9 +7,11 @@
     scroll-behavior: smooth;
     scroll-padding-top: 60px;
 
-    --alpha:0.4;
+    
     --main-color:rgb(196, 52, 201);
+    --main-color-layer:#d046e296;
     --main-color-hover:rgb(192, 163, 255);
+
 
     --title-color:#1f1f1f;
     --p-color:#4E4E4E;
@@ -141,6 +143,83 @@ div#carousel-portfolio a:has(i.fa){
     right: 70px;
     font-size: 20px;
     color: #fff;
+}
+
+/* end of the portfolio carousel */
+
+/* start of the coloring */
+div.coloring{
+    top: 50%;
+    right: 5px;
+    background-color: var(--main-color-hover);
+    border-radius: 8px 0 0 9px;
+    width: 30px;
+    min-height: 30px;
+    transition: min-height var(--duration);
+
+  
+}
+
+div.coloring:hover label{
+    position: static;
+
+}
+
+div.coloring label{
+    position: absolute;
+    
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    box-shadow: 0 0 4px rgb(255, 255, 255);
+ 
+    margin:  5px;
+ 
+    
+}
+div.coloring label[for="blue"]{
+    background-color: #0078ff;
+}
+div.coloring label[for="red"] {
+    background-color: #ff0037;
+}
+div.coloring label[for="green"] {
+    background-color: #008111;
+}
+div.coloring label[for="violet"] {
+    background-color:rgb(196, 52, 201);
+}
+
+
+body:has(input[id="violet"]:checked) {
+    --main-color: rgb(196, 52, 201);
+        --main-color-layer: #d046e296;
+        --main-color-hover: rgb(192, 163, 255);
+}
+body:has(input[id="violet"]:checked) label[for="violet"],
+body:has(input[id="blue"]:checked) label[for="blue"],
+body:has(input[id="red"]:checked) label[for="red"],
+body:has(input[id="green"]:checked) label[for="green"]{
+    border: 2px solid rgb(255, 255, 255);
+    z-index: 8989;
+}
+body:has(input[id="blue"]:checked){
+    --main-color: #0078ff;
+        --main-color-layer: #0077ff60;
+        --main-color-hover: #9ecbff;
+}
+
+
+body:has(input[id="red"]:checked) {
+    --main-color: #ff0037;
+        --main-color-layer: #ff00376e;
+        --main-color-hover: #ff9fb4;
+}
+body:has(input[id="green"]:checked) {
+    --main-color: #008111;
+    --main-color-layer: #0081116c;
+    --main-color-hover: #5ab466;
 }
 /*{
  end of the global */
@@ -483,7 +562,7 @@ div.main div.services div.my-card p{
     /* border: 1px solid red; */
 }
 div.numbers{
-    background-image:linear-gradient(#d046e296, #b700ff9f), url('../images/imgi_13_counters-bg.jpg');
+    background-image:linear-gradient(var(--main-color-layer), var(--main-color-layer)), url('../images/imgi_13_counters-bg.jpg');
     background-size: cover;
     background-attachment: scroll;
     background-repeat: no-repeat;
@@ -494,7 +573,7 @@ div.numbers i{
    
     width: 90px;
     height: 90px;
-    border: 8px solid #d39eda;
+    border: 8px solid var(--main-color-hover);
     padding-top: 14px;
   
     font-size: var(--icon-size);
@@ -552,7 +631,7 @@ div.portfolio div.card .card-body a{
 /* start of developers */
 
 div.developer{
-     background-image:linear-gradient(#d046e26e, #b700ff71),url('../images/imgi_14_overlay-bg.jpg');
+     background-image:linear-gradient(var(--main-color-layer), var(--main-color-layer)),url('../images/imgi_14_overlay-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
      height: 100vh;
@@ -655,7 +734,7 @@ div.contact *{ /* for texting*/
 }
 div.contact{
     padding-block: 100px;
-     background-image:linear-gradient(#d046e26e, #b700ff71), url('../images/imgi_14_overlay-bg.jpg');
+     background-image:linear-gradient(var(--main-color-layer), var(--main-color-layer)), url('../images/imgi_14_overlay-bg.jpg');
     background-size: cover;
     background-attachment: scroll;
     background-repeat: no-repeat;
